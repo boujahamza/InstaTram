@@ -164,9 +164,7 @@ class PhotosActivity : AppCompatActivity() {
                     val intent = Intent(this, DisplayImageActivity::class.java).apply {
                         putExtra(STATION_ID, intent.getIntExtra(STATION_ID, -1))
                         putExtra(STATION_NAME, intent.getStringExtra(STATION_NAME))
-
                         putExtra(IMAGE, imageFilePath)
-
                     }
                     this.startActivity(intent)
                     this@PhotosActivity.finish()
